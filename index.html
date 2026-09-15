@@ -8,7 +8,7 @@
     
     <!-- Tailwind CSS vía CDN (Úsalo para prototipado rápido en GitHub Pages) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <script src="./js/script.js"></script>
     <!-- Configuración opcional de Tailwind (colores personalizados, fuentes, etc.) -->
     <script>
         tailwind.config = {
@@ -33,7 +33,7 @@
                     },
                     colors: {
                         primary: '#2563eb', // Un azul moderno
-                        second: '#FFFFFF',
+                        second: '#FFFFFF', //blanco
                         dark: '#0f172a',
                     }
                 }
@@ -51,8 +51,9 @@
             <!-- Menú Desktop -->
             <ul class="hidden desktop:flex space-x-8 text-second">
                 <li><a href="#about" class="hover:text-dark transition">Sobre mí</a></li>
-                <li><a href="#projects" class="hover:text-dark transition">Proyectos</a></li>
                 <li><a href="#skills" class="hover:text-dark transition">Habilidades</a></li>
+                <li><a href="#projects" class="hover:text-dark transition">Proyectos</a></li>
+                <li><a href="#courses" class="hover:text-dark transition">Cursos</a></li>
                 <li><a href="#contact" class="hover:text-dark transition">Contacto</a></li>
             </ul>
 
@@ -65,8 +66,9 @@
         <!-- Menú Móvil -->
         <div id="mobile-menu" class="hidden desktop:hidden bg-gray-50 border-t p-4">
             <a href="#about" class="block py-2 hover:text-dark">Sobre mí</a>
-            <a href="#projects" class="block py-2 hover:text-dark">Proyectos</a>
             <a href="#skills" class="block py-2 hover:text-dark">Habilidades</a>
+            <a href="#projects" class="block py-2 hover:text-dark">Proyectos</a>
+            <a href="#courses" class="block py-2 hover:text-dark">Cursos</a>
             <a href="#contact" class="block py-2 hover:text-dark">Contacto</a>
         </div>
     </nav>
@@ -82,6 +84,21 @@
                     <p class="font-bold text-gray-300 text-xs mb-4">Apasionado por crear experiencias web limpias, funcionales y escalables. Especializado en HTML, CSS y tecnologías modernas.</p>
                 </div>
             </div>
+            <a href="https://www.linkedin.com/in/lesrry-david-rios-fernandes-99876b283/" class="text-gray-900 hover:text-gray-300 transition">
+                <!-- Icono de LinkedIn (SVG simple) -->
+                <span class="sr-only">LinkedIn</span>
+                <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://github.com/DavidR10s" class="text-gray-900 hover:text-gray-300 transition">
+                        <!-- Icono de GitHub (SVG simple) -->
+                <span class="sr-only">GitHub</span>
+                <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="./DEV-JUNIOR-DAVID-RIOS-CV.pdf" class="text-gray-900 hover:text-gray-300 transition">
+                <span class="sr-only">Mi CV</span>
+                <svg class="h-8 w-8" version="1.1"viewBox="0 0 512 512" xml:space="preserve" fill="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="14.336000000000002"></g><g id="SVGRepo_iconCarrier"><g> <path class="st0" d="M378.413,0H208.297h-13.182L185.8,9.314L57.02,138.102l-9.314,9.314v13.176v265.514 c0,47.36,38.528,85.895,85.896,85.895h244.811c47.353,0,85.881-38.535,85.881-85.895V85.896C464.294,38.528,425.766,0,378.413,0z M432.497,426.105c0,29.877-24.214,54.091-54.084,54.091H133.602c-29.884,0-54.098-24.214-54.098-54.091V160.591h83.716 c24.885,0,45.077-20.178,45.077-45.07V31.804h170.116c29.87,0,54.084,24.214,54.084,54.092V426.105z"></path> <path class="st0" d="M171.947,252.785h-28.529c-5.432,0-8.686,3.533-8.686,8.825v73.754c0,6.388,4.204,10.599,10.041,10.599 c5.711,0,9.914-4.21,9.914-10.599v-22.406c0-0.545,0.279-0.817,0.824-0.817h16.436c20.095,0,32.188-12.226,32.188-29.612 C204.136,264.871,192.182,252.785,171.947,252.785z M170.719,294.888h-15.208c-0.545,0-0.824-0.272-0.824-0.81v-23.23 c0-0.545,0.279-0.816,0.824-0.816h15.208c8.42,0,13.447,5.027,13.447,12.498C184.167,290,179.139,294.888,170.719,294.888z"></path> <path class="st0" d="M250.191,252.785h-21.868c-5.432,0-8.686,3.533-8.686,8.825v74.843c0,5.3,3.253,8.693,8.686,8.693h21.868 c19.69,0,31.923-6.249,36.81-21.324c1.76-5.3,2.723-11.681,2.723-24.857c0-13.175-0.964-19.557-2.723-24.856 C282.113,259.034,269.881,252.785,250.191,252.785z M267.856,316.896c-2.318,7.331-8.965,10.459-18.21,10.459h-9.23 c-0.545,0-0.824-0.272-0.824-0.816v-55.146c0-0.545,0.279-0.817,0.824-0.817h9.23c9.245,0,15.892,3.128,18.21,10.46 c0.95,3.128,1.62,8.56,1.62,17.93C269.476,308.336,268.805,313.768,267.856,316.896z"></path> <path class="st0" d="M361.167,252.785h-44.812c-5.432,0-8.7,3.533-8.7,8.825v73.754c0,6.388,4.218,10.599,10.055,10.599 c5.697,0,9.914-4.21,9.914-10.599v-26.351c0-0.538,0.265-0.81,0.81-0.81h26.086c5.837,0,9.23-3.532,9.23-8.56 c0-5.028-3.393-8.553-9.23-8.553h-26.086c-0.545,0-0.81-0.272-0.81-0.817v-19.425c0-0.545,0.265-0.816,0.81-0.816h32.733 c5.572,0,9.245-3.666,9.245-8.553C370.411,256.45,366.738,252.785,361.167,252.785z"></path> </g> </g></svg>  
+                
+            </a>
         </div>
     </header>
 
@@ -182,6 +199,26 @@
         </div>
     </section>
 
+    <section id="courses" class="bg-gray-700">
+        <ul class="space-y-2 text-gray-100 py-20 px-6">
+            <h3 class="text-3xl font-bold text-center mb-12 text-second">Cursos y Certificaciones</h3>
+            
+            <li class="text-xl py-2 bg-dark border-8 border-dark border-l-blue-500 rounded-lg"> Trabajando con API de OpenAI
+                <p class="text-gray-400"> Datacamp</p>
+            </li>
+            <li class="text-xl py-2 bg-dark border-8 border-dark border-l-blue-500 rounded-lg"> Todo lo que puedes hacer con copilot-free 
+                <p class="text-gray-400"> openWebinars</p>
+            </li>
+            <li class="text-xl py-2 bg-dark border-8 border-dark border-l-blue-500 rounded-lg"> Introducción al prompt engineering 
+                <p class="text-gray-400"> OpenWebinars</p>
+            </li>
+            <li class="text-xl py-2 bg-dark border-8 border-dark border-l-blue-500 rounded-lg"> Creación de DDBB para ecommerce 
+                <p class="text-gray-400"> OpenWebinars</p>
+            </li>
+
+        </ul>
+    </section>
+
     <!-- Sección de Contacto -->
     <section id="contact" class="py-20 px-6 bg-gradient-to-br from-dark to-gray-800 text-center">
         <div class="container mx-auto max-w-2xl">
@@ -190,7 +227,7 @@
                 Estoy disponible para trabajos freelance u oportunidades laborales. 
                 ¡Hablemos!
             </p>
-            <a href="mailto:lesrrydavidriosfernandes@gmail.com" class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition shadow-lg inline-block">
+            <a onclick="copiarTextoClasico()" href="" class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition shadow-lg inline-block">
                 Envíame un correo
             </a>
             
