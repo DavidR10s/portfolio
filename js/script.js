@@ -10,5 +10,13 @@ function copiarTextoClasico() {
   
   // Limpiar
   document.body.removeChild(input);
-  alert("Texto copiado");
+  Swal.fire({
+    icon: 'success',
+    title: '¡Correo copiado al portapapeles!',
+    text: 'Ahora puedes pegarlo en tu cliente de correo para enviarme un mensaje.',
+    confirmButtonText: 'Cerrar',
+    customClass: {
+      confirmButton: 'bg-gray-300 text-gray-800 px-4 py-2 rounded-lg font-medium hover:bg-gray-400 transition text-sm'
+    }
+  });
 }
